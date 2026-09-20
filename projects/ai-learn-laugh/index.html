@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Learn & Laugh</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <p class="eyebrow">Audience Growth Toolkit</p>
+        <h1>AI Learn & Laugh</h1>
+        <p>
+          Generate a shareable prompt-card: one safe joke + one practical AI/tech insight + one clear action your audience can take.
+        </p>
+      </header>
+
+      <section class="controls" aria-label="Card controls">
+        <button id="generateButton" type="button">Generate new prompt-card</button>
+        <button id="copyButton" type="button" disabled>Copy card</button>
+      </section>
+
+      <p id="status" class="status" aria-live="polite">Ready to generate a card.</p>
+
+      <article id="card" class="card" aria-live="polite" aria-atomic="true">
+        <h2 id="cardTitle">No card yet</h2>
+        <p class="tag" id="cardTag">Tag: —</p>
+        <section>
+          <h3>Joke</h3>
+          <p id="cardJoke">Press generate to load a safe joke.</p>
+        </section>
+        <section>
+          <h3>Insight</h3>
+          <p id="cardInsight">—</p>
+        </section>
+        <section>
+          <h3>Takeaway</h3>
+          <p id="cardTakeaway">—</p>
+        </section>
+        <section>
+          <h3>Call To Action</h3>
+          <p id="cardCta">—</p>
+        </section>
+        <footer>
+          <p id="cardFollow">Follow for daily AI ideas, practical tech opportunities, and a little humor.</p>
+        </footer>
+      </article>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
